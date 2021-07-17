@@ -29,27 +29,29 @@ float p,ch,b,m,co,per;
 
     printf("\n\t |\t    Percentage of five subject \t:%f \t |\n",per);
     printf("\n\t ---------------------------------------------------------\n");
-     if(per>= 90 && per<100)
+    if(per>0 && per<100)
+    {
+     if(per>= 90 && per<=100)
         {
             printf("\n\t |\t    Congratulations! You get Grade 'A'\t\t |\n");
         }
-     else if(per>=80&& per<100)
+     else if(per>=80&& per<=100)
         {
             printf("\n\t |\t    Congratulations! You get Grade 'B'\t\t |\n");
         }
-     else if(per>=70 && per<100)
+     else if(per>=70 && per<=100)
         {
             printf("\n\t |\t    Congratulations! You get Grade 'C'\t\t |\n");
         }
-     else if(per>=60 && per<100)
+     else if(per>=60 && per<=100)
         {
             printf("\n\t |\t    Congratulations! You get Grade 'D'\t\t |\n");
         }
-     else if(per>=40 && per<100)
+     else if(per>=40 && per<=100)
         {
             printf("\n\t |\t    Congratulations! You get Grade 'E'\t\t |\n");
         }
-     else if(per<40 && per<100)
+     else if(per<40 && per<=100)
         {
             printf("\n\t |\t    Do well! You get Grade 'F'\t\t\t |\n");
         }
@@ -57,7 +59,9 @@ float p,ch,b,m,co,per;
         {
             printf("\n\t |\t\t\t   Error       \t\t\t |\n");
         }
-
+    }
+    else
+            printf("\n\t |\t\t\t   Error       \t\t\t |\n");
     printf("\n\t ---------------------------------------------------------\n");
     printf("\n\n\t\tSuccessfully Executed...\n\n");
     return 0;
