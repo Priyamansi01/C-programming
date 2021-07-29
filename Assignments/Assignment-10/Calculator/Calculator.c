@@ -4,18 +4,19 @@
 int main()
 {
     char option;
-
     float x,y,result;
 
-    printf("\n\n\n\t\t\t\t\t\t ---WELCOM TO MY PROJECT---\n");
+    printf("\n\n\n\t\t\t\t\t\t   [---SIMPLE CALCULATOR---]\n");
     printf("\n\t\t\t\t-----------------------------------------------------------");
-    printf("\n\t\t\t\t|\tA= ADDITION\t\t\t D= DIVISION  \t  |\n\t\t\t\t|\tB= SUBTRATION\t\t\t E= REMAINDER  \t  |\n\t\t\t\t|\tC= MULTIPLICATION \t\t F= POWER  \t  |");
-    printf("\n\t\t\t\t-----------------------------------------------------------");
+    printf("\n\t\t\t\t|\tA= ADDITION\t\t|\t D= DIVISION  \t  |\n\t\t\t\t-----------------------------------------------------------");
+    printf("\n\t\t\t\t|\tB= SUBTRATION\t\t|\t E= REMAINDER  \t  |\n\t\t\t\t-----------------------------------------------------------");
+    printf("\n\t\t\t\t|\tC= MULTIPLICATION \t|\t F= POWER  \t  |\n\t\t\t\t-----------------------------------------------------------");
+    printf("\n\n\t\t\t\t-----------------------------------------------------------");
     printf("\n\t\t\t\t|\t\t\t\t\t\t\t  |");
     printf("\n\t\t\t\t\tCHOOSE ANY ONE LETTER TO PERFORM THE TASK : ");
     scanf("%c",&option);
     printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------");
-    //printf("\n\t\t\t\t|\t\t %s is the task you have selected.  \t  |\n\n");
+    printf("\n\n\t\t\t\t-----------------------------------------------------------");
     switch(option)
         {
         case 'A':
@@ -24,7 +25,7 @@ int main()
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
             result=x+y;
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %f \t\t\t\t  |",result);
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|\t%f  \t  |",result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
             break;
          case 'B':
@@ -33,7 +34,7 @@ int main()
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
             result=x-y;
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %f \t\t\t\t  |",result);
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|\t%f  \t  |",result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
              break;
          case 'C':
@@ -42,7 +43,7 @@ int main()
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
             result=x*y;
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %f \t\t\t\t  |",result);
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|\t%f  \t  |",result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
              break;
          case 'D':
@@ -51,7 +52,7 @@ int main()
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
             result=x/y;
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %f \t\t\t\t  |",result);
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|\t%f  \t  |",result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
              break;
          case 'E':
@@ -59,8 +60,8 @@ int main()
             printf("\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\t\t\t\t\t\t\t  |");
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
-            int result=(int)x %(int) y;
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %d \t\t\t\t\t  |",result);
+            result=(int)x %(int) y;
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|     \t    %d    \t  |",(int)result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
              break;
          case 'F':
@@ -69,13 +70,13 @@ int main()
             printf("\t\t\t\t\t\t\t\tEnter two value : ");
             scanf("%f%f",&x,&y);
             result= pow(x,y);       //x=base and y=exponent
-            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult= %f \t\t\t\t  |", result);
+            printf("\t\t\t\t|\t\t\t\t\t\t\t  |\n\t\t\t\t-----------------------------------------------------------\n\t\t\t\t|\tResult\t\t\t|\t%f  \t  |", result);
             printf("\n\t\t\t\t-----------------------------------------------------------");
              break;
          default:
-            printf("\n\t\t\t\t|\tINVALID(-_-) \t\t\t\t  |");
+            printf("\n\t\t\t\t|\t\t\tINVALID(-_-) \t\t\t  |");
             printf("\n\t\t\t\t-----------------------------------------------------------");
-
         }
-
+        printf("\n\n\n\t\t\t\tSuccessfully Executed....\n\n\n\n\n");
+        return 0;
 }
