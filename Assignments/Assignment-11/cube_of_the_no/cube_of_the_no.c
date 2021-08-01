@@ -1,28 +1,25 @@
-//WAP to find the sum of first 10 natural number.
+//WAP to display the cube of the number up to given an integer.
 #include"stdio.h"
 int main()
 {
 char waste;
-int i,n=1,b,a[i],sum=0;
+int i=0,n=1,b,a[i],sum=0;
     printf("\n\n\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t|\t   [Display n terms natural no. and their sum]     \t|");
+    printf("\n\t\t\t\t|     [Display the cube of the number up to given integer.]\t|");
     printf("\n\t\t\t\t|---------------------------------------------------------------|");
     printf("\n\t\t\t\t|\t\t\t\t\t\t\t\t|");
     printf("\n\t\t\t\t\t\t\tENTER A VALUE : ");
     scanf("%d",&b);
     scanf("%c",&waste);
     printf("\t\t\t\t|\t\t\t\t\t\t\t\t|\n\t\t\t\t|---------------------------------------------------------------|");
-    printf("\t\t\t\t\t\t|\t\ta[i]\t\t|\t\tn\t\t|");
+    printf("\t\t\t\t\t\t|\ta[i]\t|\tn\t|\t   Cube of n       \t|");
     printf("\n\t\t\t\t|---------------------------------------------------------------|");
-    for(i=0;n<=b;i++)
+    while(n<=b)
     {
-        printf("\n\t\t\t\t|\t\ta[%d]\t\t|\t\t%d\t\t|",i,n);
-        sum=n+sum;
+        printf("\n\t\t\t\t|\ta[%d]\t|\t%d\t|\t\t%d\t\t|",i,n,n*n*n);
+        i++;
         n++;
     }
-    printf("\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t|\t\tSum\t\t|\t\t%d\t\t|",sum);
     printf("\n\t\t\t\t-----------------------------------------------------------------");
     printf("\n\n\n\t\t\t\tSuccessfully Executed....\n\n\n");
     return 0;

@@ -1,28 +1,25 @@
-//WAP to find the sum of first 10 natural number.
+//WAP to display the multiplication table of a given integer.
 #include"stdio.h"
 int main()
 {
 char waste;
-int i,n=1,b,a[i],sum=0;
+int i=0,n,b=1,a[i],sum=0;
     printf("\n\n\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t|\t   [Display n terms natural no. and their sum]     \t|");
+    printf("\n\t\t\t\t|     [Display the multiplication table of a given integer]\t|");
     printf("\n\t\t\t\t|---------------------------------------------------------------|");
     printf("\n\t\t\t\t|\t\t\t\t\t\t\t\t|");
     printf("\n\t\t\t\t\t\t\tENTER A VALUE : ");
-    scanf("%d",&b);
+    scanf("%d",&n);
     scanf("%c",&waste);
     printf("\t\t\t\t|\t\t\t\t\t\t\t\t|\n\t\t\t\t|---------------------------------------------------------------|");
-    printf("\t\t\t\t\t\t|\t\ta[i]\t\t|\t\tn\t\t|");
+    printf("\t\t\t\t\t\t|\ta[i]\t   |\t\t   Table of %d\t\t\t|",n);
     printf("\n\t\t\t\t|---------------------------------------------------------------|");
-    for(i=0;n<=b;i++)
+    while(b<=10)
     {
-        printf("\n\t\t\t\t|\t\ta[%d]\t\t|\t\t%d\t\t|",i,n);
-        sum=n+sum;
-        n++;
+        printf("\n\t\t\t\t|\ta[%d]\t   |\t       %d * %d \t=\t %d \t\t|",i,n,b,n*b);
+        i++;
+        b++;
     }
-    printf("\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t-----------------------------------------------------------------");
-    printf("\n\t\t\t\t|\t\tSum\t\t|\t\t%d\t\t|",sum);
     printf("\n\t\t\t\t-----------------------------------------------------------------");
     printf("\n\n\n\t\t\t\tSuccessfully Executed....\n\n\n");
     return 0;
